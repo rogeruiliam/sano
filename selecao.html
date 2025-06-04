@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Personagens</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <!-- Cards dos personagens serão gerados dinamicamente via JavaScript -->
+            <div id="personagens-grid" class="personagens-grid"></div>
+            
+            <div class="painel-detalhes">
+                <h2>Detalhes do Personagem</h2>
+                <div class="detalhes-content">
+                    <div class="avatar">
+                        <img id="avatar-img" src="" alt="Avatar">
+                    </div>
+                    <div class="stats">
+                        <p><span class="stat-icon"><img src="images/simbolos/nickname.png" alt="Nickname"></span> <span id="nickname">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/level.png" alt="Level"></span> <span id="level">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/forca.png" alt="Força"></span> <span id="forca">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/agilidade.png" alt="Agilidade"></span> <span id="agilidade">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/vitalidade.png" alt="Vitalidade"></span> <span id="vitalidade">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/energia.png" alt="Energia"></span> <span id="energia">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/poder_de_ataque.png" alt="Poder de Ataque"></span> <span id="poder_ataque">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/sucesso_de_ataque.png" alt="Sucesso de Ataque"></span> <span id="sucesso_ataque">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/poder_de_combate.png" alt="Poder de Combate"></span> <span id="poder_combate">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/defesa.png" alt="Defesa"></span> <span id="defesa">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/ataque_percent.png" alt="Ataque%"></span> <span id="ataque_percent">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/defesa_percent.png" alt="Defesa%"></span> <span id="defesa_percent">-</span></p>
+                        <p><span class="stat-icon"><img src="images/simbolos/dano_magico.png" alt="Dano Mágico"></span> <span id="dano_magico">-</span></p>
+                    </div>
+                </div>
+                <button id="detalhes-btn" class="btn-detalhes">Ver Detalhes</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/characters.js"></script>
+</body>
+</html>
